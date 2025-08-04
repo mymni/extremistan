@@ -13,7 +13,7 @@ Leverages parametric distribution fitting, tail-sensitive risk measures, heavy-t
 **Sponsor:** AlgoTraders  
 **Institution:** American University of Beirut, Final Year Project, Spring 2025  
 
-Inspired by Nassim Taleb’s _The Black Swan_, this project challenges the Gaussian assumptions behind classical risk modeling. It targets financial "Extremistan"—where fat tails and extreme events dominate behavior. The toolbox provides scalable, modular software for heavy-tailed modeling, tailored to financial practitioners and quantitative researchers.
+Inspired by Nassim Taleb’s _The Black Swan_, this project challenges the Gaussian assumptions behind classical risk modeling. It targets financial "Extremistan"—where fat tails and extreme events dominate the behavior of financial markets . The toolbox provides scalable, modular software for heavy-tailed modeling, tailored to financial practitioners and quantitative researchers.
 
 ---
 
@@ -22,7 +22,7 @@ Inspired by Nassim Taleb’s _The Black Swan_, this project challenges the Gauss
 Most classical tools assume thin-tailed (Gaussian) return distributions, underestimating the impact of rare but catastrophic events. Instead, this toolbox embraces a heavy-tailed modeling approach. Core theoretical components include:
 
 - **Non-Gaussian Parametric Fitting:** Models like Student-t, Skewed Normal, and GED distributions are fit using Maximum Likelihood Estimation.
-- **Tail-Sensitive Risk Metrics:** Including CVaR, EVaR, RLVaR, Ulcer Index, Relative Power Sharpe, and others to capture downside and extreme risk.
+- **Tail-Sensitive Risk Metrics:** Including EVaR, RLVaR, Ulcer Index, Relative Power Sharpe (our proposed risk measure), and others to capture downside and extreme risk.
 - **Heavy-Tailed Dependency Modeling:** Student-t Markov Random Fields (MRFs) cluster assets based on co-extremal dependencies, overcoming limitations of Gaussian copulas.
 - **Robust Portfolio Optimization:** Incorporates tail-aware risk into optimization using constrained solvers (SLSQP, Trust-Region) for both static and rolling-window strategies.
 
@@ -36,12 +36,13 @@ Most classical tools assume thin-tailed (Gaussian) return distributions, underes
 
 ### 🔹 Distribution Fitting
 - Fits Normal, Student-t, GED, and Skewed-Normal via MLE
-- Evaluates model quality using Kolmogorov-Smirnov tests, AIC, and BIC
+- Evaluates model quality using Kolmogorov-Smirnov tests, AIC, BIC and GARCH
 
 ### 🔹 Risk Analysis
-- Computes risk metrics: VaR, CVaR, Sharpe, Sortino, Ulcer Index, Entropic VaR, Relative Power Sharpe, Max Drawdown, Information Ratio, and more
+- Computes risk metrics: VaR, Standard Sharpe, Sortino, Ulcer Index, Entropic VaR, Relative Power Sharpe, Max Drawdown, Information Ratio, and more
 - Supports both static and dynamic (rolling-window) analysis
 - Ranks stocks by composite risk scores
+- Estimates the optimal risk measure for every proposed trading strategy, and the optimal trading strategy for every computed risk measure
 
 ### 🔹 MRF-Based Dependency Modeling
 - Learns heavy-tailed Markov Random Field graphs to detect clusters of co-dependent assets
@@ -57,7 +58,7 @@ Most classical tools assume thin-tailed (Gaussian) return distributions, underes
 ## 🧪 Experimental Findings
 
 - **Student-t** consistently outperforms Gaussian fits in capturing real-world tail behavior pre- and post-COVID-19
-- Tail-sensitive metrics such as RLVaR and Relative Power Sharpe outperform traditional ones under volatile conditions
+- Tail-sensitive metrics such as Relative Power Sharpe outperform traditional ones under volatile conditions
 - MRF clustering aligns with intuitive asset groupings, aiding in effective diversification
 - Dynamic portfolios using tail-aware metrics show greater resilience in crisis periods
 

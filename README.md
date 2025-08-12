@@ -13,7 +13,7 @@ Leverages parametric distribution fitting, tail-sensitive risk measures, heavy-t
 **Sponsor:** AlgoTraders  
 **Institution:** American University of Beirut, Final Year Project, Spring 2025  
 
-Inspired by Nassim Taleb’s _The Black Swan_, this project challenges the Gaussian assumptions behind classical risk modeling. It targets financial "Extremistan"—where fat tails and extreme events dominate the behavior of financial markets . The toolbox provides scalable, modular software for heavy-tailed modeling, tailored to financial practitioners and quantitative researchers.
+Inspired by Nassim Taleb’s _The Black Swan_, this project challenges the Gaussian assumptions behind classical risk modeling. It targets financial "Extremistan"—where fat tails and extreme events dominate the behavior of financial markets. The toolbox provides scalable, modular software for heavy-tailed modeling, tailored to financial practitioners and quantitative researchers.
 
 ---
 
@@ -36,7 +36,7 @@ Most classical tools assume thin-tailed (Gaussian) return distributions, underes
 
 ### 🔹 Distribution Fitting
 - Fits Normal, Student-t, GED, and Skewed-Normal via MLE
-- Evaluates model quality using Kolmogorov-Smirnov tests, AIC, BIC and GARCH
+- Evaluates model quality using Kolmogorov-Smirnov tests, AIC, BIC, and GARCH
 
 ### 🔹 Risk Analysis
 - Computes risk metrics: VaR, Standard Sharpe, Sortino, Ulcer Index, Entropic VaR, Relative Power Sharpe, Max Drawdown, Information Ratio, and more

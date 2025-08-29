@@ -17,6 +17,16 @@ Inspired by Nassim Taleb’s _The Black Swan_, this project challenges the Gauss
 
 ---
 
+## 🚀 Quick Start
+
+To run the interactive Streamlit demo:
+
+```bash
+streamlit run app.py
+```
+
+---
+
 ## 📚 Theoretical Background
 
 Most classical tools assume thin-tailed (Gaussian) return distributions, underestimating the impact of rare but catastrophic events. Instead, this toolbox embraces a heavy-tailed modeling approach. Core theoretical components include:

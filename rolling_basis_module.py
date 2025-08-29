@@ -4,7 +4,7 @@ import pandas as pd
 import yfinance as yf
 
 # import your risk measure functions here, e.g.:
-from trading_strategy_module import compute_rsi  # only if needed
+# from trading_strategy_module import compute_rsi  # only if needed
 
 import numpy as np
 import pandas as pd
